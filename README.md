@@ -32,5 +32,5 @@ The web application should provide the following functionality:
 
 Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
 
-Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
+
 
