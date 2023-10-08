@@ -13,10 +13,10 @@ The web application should provide the following functionality:
 5. An individual reader page displaying their details and the books they have borrowed. If a reader has not borrowed any books, display the message "This reader has not borrowed any books yet."
 6. An individual book page displaying its details and the name of the reader who has borrowed it. If the book is available, display the message "This book is available."
 7. On the book's page, if the book is currently borrowed by a reader, there should be a button labeled "Release Book." This button can be clicked by a librarian to mark the book as returned. After clicking, the book should become available again and should no longer be listed under the borrower's books.
-8. On the book's page, if the book is available, there should be a dropdown list (<select>) containing all readers' names and a button labeled "Assign Book." This button can be clicked by a librarian when a reader wants to borrow the book. After clicking, the book should be assigned to the selected reader and should appear in their list of borrowed books.
+8. On the book's page, if the book is available, there should be a dropdown list containing all readers' names and a button labeled "Assign Book." This button can be clicked by a librarian when a reader wants to borrow the book. After clicking, the book should be assigned to the selected reader and should appear in their list of borrowed books.
 9. All input fields should be validated using `@Valid` and Spring Validator when necessary.
 
-## Tasks
+### Tasks
 
 1. Rewrite then this project using Hibernate and Spring Data JPA. There should be no direct SQL queries in your project. Implement the entities (`@Entity`), repositories, and services for the Book and Person entities. The `PersonDAO` and `BookDAO` should remain empty and should not be used; all database interactions should be handled through services.
 
@@ -30,7 +30,7 @@ The web application should provide the following functionality:
 
 4. Overdue Book Check: On the reader's page (`/people/id`), implement a feature that highlights books in red if they have been borrowed for more than 10 days without being returned. When a book is marked as returned, it should no longer be highlighted as overdue.
 
-### Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
+Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
 
-## Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
+Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
 
