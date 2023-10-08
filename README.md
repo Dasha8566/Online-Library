@@ -2,7 +2,7 @@
 
 The local library wants to transition to digital bookkeeping for better management of books and readers. You are tasked with creating a web application to facilitate this transition. The library staff should be able to register readers, lend books to them, and track returned books effectively through this system.
 
-## Required Functionality
+Required Functionality
 
 The web application should provide the following functionality:
 
@@ -16,11 +16,11 @@ The web application should provide the following functionality:
 8. On the book's page, if the book is available, there should be a dropdown list (<select>) containing all readers' names and a button labeled "Assign Book." This button can be clicked by a librarian when a reader wants to borrow the book. After clicking, the book should be assigned to the selected reader and should appear in their list of borrowed books.
 9. All input fields should be validated using `@Valid` and Spring Validator when necessary.
 
-## Tasks
+Tasks
 
 1. Rewrite then this project using Hibernate and Spring Data JPA. There should be no direct SQL queries in your project. Implement the entities (`@Entity`), repositories, and services for the Book and Person entities. The `PersonDAO` and `BookDAO` should remain empty and should not be used; all database interactions should be handled through services.
 
-### New Functionality
+New Functionality
 
 1. Pagination: Modify the `index()` method in the `BooksController` to accept two query parameters: `page` and `books_per_page`. The `page` parameter indicates which page of books to retrieve, and the `books_per_page` parameter determines how many books should be displayed per page. Page numbering starts from 0. If these query parameters are not provided, the endpoint should return all books.
 
@@ -30,6 +30,6 @@ The web application should provide the following functionality:
 
 4. Overdue Book Check: On the reader's page (`/people/id`), implement a feature that highlights books in red if they have been borrowed for more than 10 days without being returned. When a book is marked as returned, it should no longer be highlighted as overdue.
 
-### Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
+Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
 
-## Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
+Pagination and Sorting can work simultaneously if all three parameters are provided in the query.
